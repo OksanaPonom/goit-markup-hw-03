@@ -70,6 +70,7 @@ body {
 
   color: var(--dark);
 }
+
 .logo-item {
   color: var(--primary-brand);
 }
@@ -153,26 +154,26 @@ body {
 
 .card-item {
   flex-basis: calc(100% - ((var(--items) - 1) * var(--indent)) / var(--items));
-  
 }
 /* ---------- */
 /* -----HEADER----- */
 .header {
   display: flex;
-
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .header-bgd {
   border-bottom: 1px solid var(--accent);
 }
+.logo-header {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 76px;
+}
 .main-nav {
   display: flex;
 }
-.logo {
-  margin-right: 76px;
-}
+
 .main-nav-list {
   display: flex;
 }
@@ -184,6 +185,8 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+
+  display: block;
   padding-top: 24px;
   padding-bottom: 24px;
 
@@ -191,7 +194,7 @@ body {
 }
 
 .current {
-  color: var(--subtle-text);
+  color: var(--primary-brand);
 }
 
 .address-list {
@@ -253,9 +256,11 @@ body {
 }
 
 /* -----What are we doing----- */
+.we-doing-container {
+  padding-top: 0;
+}
 .we-doing-box {
   display: flex;
-  margin-bottom: 120px;
 }
 .we-doing-box-item {
   --items: 3;
@@ -292,7 +297,6 @@ body {
 }
 .logo-item-footer {
   color: var(--light);
- 
 }
 
 .paragraph-footer {
@@ -302,6 +306,9 @@ body {
 }
 
 /* =====PORTFOLIO=====*/
+.portfolio-page {
+  padding-top: 0;
+}
 /* -----Filter----- */
 .button-filter {
   background-color: var(--accent);
@@ -336,15 +343,10 @@ body {
 .porfolio-list {
   display: flex;
   flex-wrap: wrap;
-
-  margin-left: -24px;
-  margin-top: -48px;
-  margin-bottom: 116px;
+  gap: 24px;
 }
 .portfolio-list-item {
-  flex-basis: calc((100% / 3) - 48px);
-  margin-left: 24px;
-  margin-top: 48px;
+  flex-basis: calc((100% - 48px) / 3);
 }
 .portfolio-list-item-descr {
   padding-top: 32px;
